@@ -67,17 +67,17 @@ Se eligió Redux para gestionar el estado global de la aplicación, como la list
 
 ## Estructura del Proyecto
 
-src/
-├── \__tests_/ # Tests unitarios
-├── assets/ # Imagenes del proyecto
-├── components/ # Componentes reutilizables de React
-├── store/ # Store y slices de Redux
-├── services/ # Servicios para llamadas a la API
-├── styles/ # Estilos SASS
-├── views/ # Vistas (páginas)
-├── App.js # Componente principal
-├── index.js # Punto de entrada
-└── README.md # Documentación del proyecto
+- `src/`
+  - `__tests_/` - Tests unitarios
+  - `assets/` - Imagenes del proyecto
+  - `components/` - Componentes reutilizables de React
+  - `store/` - Store y slices de Redux
+  - `services/` - Servicios para llamadas a la API
+  - `styles/` - Estilos SASS
+  - `views/` - Vistas (páginas)
+  - `App.js` - Componente principal
+  - `index.js` - Punto de entrada
+  - `README.md` - Documentación del proyecto
 
 ## Cómo Ejecutar el Proyecto
 
