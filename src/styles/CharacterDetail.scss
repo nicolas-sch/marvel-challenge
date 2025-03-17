@@ -1,0 +1,137 @@
+@import "colors";
+
+.character_detail_container {
+  .character_resume {
+    height: 320px;
+    background: $secondary-color;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 24px),
+      calc(100% - 24px) 100%,
+      0 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .character_detail_image {
+      img {
+        width: 320px;
+        height: 100%;
+      }
+    }
+
+    .character_detail_name {
+      width: 640px;
+      padding: 48px 0 48px 24px;
+      .character_detail_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1 {
+          color: $white-color;
+          font-size: 2.5rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          line-height: 100%;
+        }
+
+        button {
+          background: transparent;
+          border: none;
+          font-size: 1.5rem;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 24px 0;
+        color: $white-color;
+        font-weight: 400;
+        line-height: 100%;
+      }
+    }
+  }
+  .character_comics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 48px 0 24px 16px;
+    h2 {
+      width: 100%;
+      justify-content: flex-start;
+      font-size: 1.5em;
+      color: $secondary-color;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .character_detail_container {
+    width: 100%;
+    .character_resume {
+      width: auto;
+      .character_detail_image {
+        width: auto;
+        height: 100%;
+        img {
+          width: auto;
+        }
+      }
+      .character_detail_name {
+        padding: 79.5px 48px;
+        .character_detail_title {
+          h1 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+    .character_comics {
+      padding: 48px 0 0 48px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .character_detail_container {
+    width: 100%;
+    .character_resume {
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      .character_detail_image {
+        width: 100%;
+        height: 398px;
+        img {
+          width: 100%;
+        }
+      }
+      .character_detail_name {
+        width: 100%;
+        padding: 0;
+        .character_detail_title {
+          padding: 24px 16px;
+          h1 {
+            font-size: 2rem;
+          }
+        }
+        p {
+          padding: 0 16px;
+        }
+      }
+    }
+
+    .character_comics {
+      padding: 48px 0 24px 16px;
+    }
+  }
+}

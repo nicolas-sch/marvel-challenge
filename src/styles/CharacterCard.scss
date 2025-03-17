@@ -1,0 +1,83 @@
+@import 'colors';
+
+.card_character {
+    position: relative;
+    width: 11.75rem;
+    height: 15.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-color;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 13px),
+      calc(100% - 13px) 100%,
+      0 100%
+    );
+
+    .image_character {
+      position: relative;
+      width: 100%;
+      height: 11.5rem;
+
+      img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .name_character {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 3.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 5.3px solid $primary-color;
+
+      h2 {
+        font-size: 0.875em;
+        color: $white-color;
+        padding: 16px 0px 24px 16px;
+        z-index: 999;
+      }
+
+      .favorite_button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 16px 16px 24px 0px;
+        z-index: 999;
+
+        .favorite_icon {
+          width: 12px;
+          height: 12px;
+          transition: opacity 0.2s ease;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: $primary-color;
+        transition: height 0.3s ease-in-out;
+        z-index: 1;
+      }
+
+      &:hover::before {
+        height: 100%;
+      }
+
+      &:hover .favorite_button .favorite_icon {
+        content: url("../assets/favorites-empty.png");
+      }
+    }
+  }

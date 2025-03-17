@@ -1,0 +1,19 @@
+@import 'colors';
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 48px;
+  background-color: $secondary-color;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  .marvel-logo {
+    height: 50px;
+  }
+
+  .search-container {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+}

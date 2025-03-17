@@ -1,0 +1,27 @@
+@import "colors";
+
+.character-list {
+  text-align: center;
+
+  h1 {
+    color: $primary-color;
+  }
+
+  .card_container {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 48px;
+  }
+}
+
+@media (max-width: 425px) {
+  .character-list {
+    .card_container {
+      padding: 0 16px;
+    }
+  }
+}
