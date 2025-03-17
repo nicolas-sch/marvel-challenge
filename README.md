@@ -155,7 +155,3 @@ npm test
 ## Conclusión
 
 Este proyecto se ha desarrollado con un enfoque en buenas prácticas de desarrollo, como la utilización de la arquitectura MVC, los principios SOLID y la gestión del estado con Redux. La aplicación es escalable, modular y fácil de mantener, además de seguir un diseño responsivo y centrado en el usuario.
-
-```
-
-```
