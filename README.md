@@ -67,18 +67,17 @@ Se eligió Redux para gestionar el estado global de la aplicación, como la list
 
 ## Estructura del Proyecto
 
-````plaintext
 src/
-├── __tests_/         # Tests unitarios
-├── assets/           # Imagenes del proyecto
-├── components/       # Componentes reutilizables de React
-├── store/            # Store y slices de Redux
-├── services/         # Servicios para llamadas a la API
-├── styles/           # Estilos SASS
-├── views/            # Vistas (páginas)
-├── App.js            # Componente principal
-├── index.js          # Punto de entrada
-└── README.md         # Documentación del proyecto
+├── \__tests_/ # Tests unitarios
+├── assets/ # Imagenes del proyecto
+├── components/ # Componentes reutilizables de React
+├── store/ # Store y slices de Redux
+├── services/ # Servicios para llamadas a la API
+├── styles/ # Estilos SASS
+├── views/ # Vistas (páginas)
+├── App.js # Componente principal
+├── index.js # Punto de entrada
+└── README.md # Documentación del proyecto
 
 ## Cómo Ejecutar el Proyecto
 
@@ -91,37 +90,36 @@ src/
 
 1. Clona el repositorio:
 
-    ```bash
-    git clone https://github.com/tu-usuario/zara-web-challenge.git
-    cd zara-web-challenge
-    ```
+   ```bash
+   git clone https://github.com/tu-usuario/zara-web-challenge.git
+   cd zara-web-challenge
+   ```
 
 2. Instala las dependencias:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 3. Ejecuta el proyecto en modo de desarrollo:
 
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 
 4. Accede a la aplicación en el navegador:
 
-    ```plaintext
-    http://localhost:3000
-    ```
+   ```plaintext
+   http://localhost:3000
+   ```
 
 ## Pruebas
 
 La aplicación incluye pruebas unitarias y de integración para garantizar la calidad del código. Las pruebas se implementaron utilizando **Jest** y **React Testing Library**.
 
-
 ## Ejemplo de Prueba Unitaria
 
-```javascript
+````javascript
 // src/components/CharacterList.test.js
 import { render, screen } from '@testing-library/react';
 import CharacterList from './CharacterList';
