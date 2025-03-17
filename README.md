@@ -141,6 +141,7 @@ Para ejecutar las pruebas, usa el comando:
 
 ```bash
 npm test
+```
 
 ## Mejoras Futuras
 
